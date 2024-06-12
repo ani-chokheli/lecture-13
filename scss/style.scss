@@ -1,0 +1,126 @@
+$background-color-body: #ccd0d6;
+$background-color-footer: #243043;
+$font-family-roboto: 'Roboto';
+$font-size-small: 12px;
+$font-size-medium: 15px;
+$font-weight-bold: 700;
+$font-weight-normal: 400;
+$color-white: #FFFFFF;
+$color-grey: #818687;
+
+body {
+  background-color: $background-color-body;
+  width: 1440px;
+}
+
+nav {
+  ul {
+    display: inline;
+    li {
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
+
+  .nav-img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+}
+
+h1 {
+  margin-left: 25px;
+}
+
+section {
+  display: inline-block;
+  background-color: $color-white;
+  margin-left: 30px;
+  position: relative;
+
+  .section-img {
+    width: 362px;
+    height: 186px;
+  }
+
+  h2 {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    font-style: italic;
+    color: $color-white;
+  }
+
+  p {
+    margin-top: 40px;
+    margin-left: 35px;
+    font-family: $font-family-roboto;
+    font-size: $font-size-small;
+    font-weight: $font-weight-bold;
+    line-height: 21.72px;
+  }
+
+  .time {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    margin-left: 20px;
+  }
+}
+
+main {
+  img {
+    display: block;
+    margin-top: 50px;
+  }
+
+  .img1,
+  .img2 {
+    display: inline-block;
+    vertical-align: middle;
+
+    &.img2 {
+      margin-left: 80px;
+    }
+  }
+}
+
+footer {
+  background: $background-color-footer;
+  position: relative;
+  margin-top: 10px;
+
+  ul {
+    display: inline-block;
+
+    li {
+      font-family: $font-family-roboto;
+      font-size: $font-size-small;
+      font-weight: $font-weight-bold;
+      line-height: 14.06px;
+      width: 39px;
+      height: 14px;
+      margin-left: 60px;
+      color: $color-grey;
+      list-style-type: none;
+    }
+  }
+
+  h2 {
+    position: absolute;
+    left: 600px;
+    bottom: 100px;
+    font-family: $font-family-roboto;
+    font-size: $font-size-medium;
+    font-weight: $font-weight-normal;
+    line-height: 14.06px;
+    color: $color-white;
+  }
+
+  img {
+    position: absolute;
+    left: 1100px;
+    top: 10px;
+  }
+}
