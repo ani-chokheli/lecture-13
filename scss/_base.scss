@@ -1,0 +1,115 @@
+body {
+    background-color: $background-color-body;
+    width: 1440px;
+  }
+  
+  nav {
+    ul {
+      display: inline;
+      li {
+        display: inline-block;
+        margin-left: 20px;
+      }
+    }
+  
+    .nav-img {
+      margin-top: 8px;
+      vertical-align: middle;
+    }
+  }
+  
+  h1 {
+    margin-left: 25px;
+  }
+  
+  section {
+    display: inline-block;
+    background-color: $color-white;
+    margin-left: 30px;
+    position: relative;
+  
+    .section-img {
+      width: 362px;
+      height: 186px;
+    }
+  
+    h2 {
+      position: absolute;
+      top: 30px;
+      left: 40px;
+      font-style: italic;
+      color: $color-white;
+    }
+  
+    p {
+      margin-top: 40px;
+      margin-left: 35px;
+      @include font($font-family-roboto, $font-size-small, $font-weight-bold);
+      line-height: 21.72px;
+    }
+  
+    .time {
+      display: inline-block;
+      vertical-align: middle;
+      width: 16px;
+      height: 16px;
+      margin-left: 20px;
+    }
+  }
+  
+  main {
+    img {
+      display: block;
+      margin-top: 50px;
+    }
+  
+    .img1,
+    .img2 {
+      display: inline-block;
+      vertical-align: middle;
+  
+      &.img2 {
+        margin-left: 80px;
+      }
+    }
+  }
+
+footer {
+    background: $background-color-footer;
+    position: relative;
+    margin-top: 10px;
+    padding: 40px 0;
+  
+    ul {
+      display: inline-block;
+  
+      li {
+        @include font($font-family-roboto, $font-size-small, $font-weight-bold);
+        line-height: 14.06px;
+        width: 100px;
+        height: 14px;
+        margin-left: 60px;
+        color: $color-grey;
+        list-style-type: none;
+      }
+    }
+  
+    h2 {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 30px;
+      @include font($font-family-roboto, $font-size-medium, $font-weight-normal);
+      line-height: 14.06px;
+      color: $color-white;
+    }
+  
+    img {
+      position: absolute;
+      left: 90%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  
+
